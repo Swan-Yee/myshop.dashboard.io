@@ -68,10 +68,6 @@
 }
 
 /* for carousel image */
-.item-carousel{
-    margin-top: -100px;
-}
-
 .item-card-img{
     height: 200px;
 }
@@ -84,7 +80,9 @@
     z-index: 3000;
 }
 
-  
+    .mb-sm {
+        margin-bottom: 10px !important;
+    }
 @media screen and (max-width: 780px){
     /* menu layout */
     .aside{
@@ -94,12 +92,5 @@
         display: block !important;
         background-color: white;
         margin-left: -100%;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    /* for canvas contect layout */
-    .canvas-card {
-        margin-bottom: 110px;
     }
 }
