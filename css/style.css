@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --primary-soft: #f3f3f3;
+}
+
+/* for main menu layout */
+.aside {
+    width: 300px;
+}
+
+/* for main content layout */
+.content{
+    background-color: var(--primary-soft);
+    overflow: scroll;
+    box-shadow:0 .125rem .25rem rgba(0, 0, 0, .075) inset;
+}
+
+/* for nav at content layout */
+.header{
+    position: sticky;
+    top: 0.2rem;
+    z-index: 2000;
+}
+
+.show-side-bar-btn{
+    cursor: pointer;
+}
+
+.user-img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* four card at contect layout */
+.card{
+    border: none;
+}
+
+.card-status{
+    transition: 0.3s;
+}
+
+.card-status:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-status:active {
+    transform: translateY(-5px);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* canvas image */
+.ov-img{
+    margin-left: -25px;
+    width: 40px;
+}
+
+/* wrapper for canvas responsive */
+.wrapper {
+    height: 100% !important;
+}
+
+/* for carousel image */
+.item-carousel{
+    margin-top: -100px;
+}
+
+.item-card-img{
+    height: 200px;
+}
+
+/* for carousel arrow color */
+.carousel-control-next,
+.carousel-control-prev
+   {
+    filter: invert(100%);
+    z-index: 3000;
+}
+
+  
+@media screen and (max-width: 780px){
+    /* menu layout */
+    .aside{
+        position: fixed;
+        width: 300px;
+        z-index: 2001;
+        display: block !important;
+        background-color: white;
+        margin-left: -100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /* for canvas contect layout */
+    .canvas-card {
+        margin-bottom: 110px;
+    }
+}

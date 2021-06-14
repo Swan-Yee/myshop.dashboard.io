@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/feather-icons-web/feather.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="main container-fluid">
+        <div class="row">
+            <!-- menu layout -->
+            <div class="col-12 col-lg-3 col-xl-2 vh-100 aside">
+                <div class="d-flex justify-content-between align-items-center my-3">
+                    <div class="">
+                        <span class="h3 font-weight-bolder text-primary h2">My Shop</span>
+                    </div>
+                    <button class="hide-side-bar-btn btn btn-link bth-sm d-lg-none d-block">
+                        <i class="feather-x text-primary" style="font-size: 2em;"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- content layout -->
+            <div class="col-12 col-lg-9 vh-100 col-xl-10 py-1 content">
+                <!-- nav -->
+                <div class="row header mb-4">
+                    <div class="col-12">
+                        <div class="p-2 bg-primary rounded d-flex justify-content-between align-items-center">
+                            <button class="show-side-bar-btn btn btn-primary bth-sm d-lg-none">
+                                <i class="feather-menu text-light" style="font-size: 2em;"></i>
+                            </button>
+                            <form action="" method="post" class="d-none d-lg-block">
+                                <div class="form-inline">
+                                    <input type="text" name="" id="" class="form-control mr-2">
+                                    <button class="btn btn-light">
+                                        <i class="feather-search text-primary"></i>
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="dropdown">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="img/user/avatar1.jpg" alt="" srcset="" class="user-img"> Swan Yee Tun
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                    <button class="dropdown-item" type="button">Action</button>
+                                    <button class="dropdown-item" type="button">Another action</button>
+                                    <div class="dropdown-divider"></div>
+                                    <button class="dropdown-item" type="button">Log out</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 cards at content layout -->
+                <div class="row">
+                    <div class="col-12 col-lg-6 col-md-6 col-xl-3">
+                        <div class="card mb-3 card-status">
+                            <div class="card-body">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-4">
+                                        <i class="feather-shopping-bag h1 text-primary"></i>
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="mb-3 h4 font-weight-bolder">
+                                            <span class="counter-up">
+                                                123
+                                            </span>
+                                        </p>
+                                        <p class="mb-0 text-black-50">Today Order</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-6 col-xl-3">
+                        <div class="card mb-3 card-status">
+                            <div class="card-body">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-4">
+                                        <i class="feather-user h1 text-primary"></i>
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="mb-3 h4 font-weight-bolder">
+                                            <span class="counter-up">
+                                                456
+                                            </span>
+                                        </p>
+                                        <p class="mb-0 text-black-50">Total Users</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-6 col-xl-3">
+                        <div class="card mb-3 card-status">
+                            <div class="card-body">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-4">
+                                        <i class="feather-package h1 text-primary"></i>
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="mb-3 h4 font-weight-bolder">
+                                            <span class="counter-up">
+                                                223 
+                                            </span>
+                                        </p>
+                                        <p class="mb-0 text-black-50">Total Items</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-6 col-xl-3">
+                        <div class="card mb-3 card-status">
+                            <div class="card-body">
+                                <div class="row d-flex align-items-center">
+                                    <div class="col-4">
+                                        <i class="feather-map-pin h1 text-primary"></i>
+                                    </div>
+                                    <div class="col-8">
+                                        <p class="mb-3 h4 font-weight-bolder">
+                                            <span class="counter-up">
+                                                14
+                                            </span>
+                                        </p>
+                                        <p class="mb-0 text-black-50">Support Location</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row align-items-end">
+                    <!-- canvas for order and viewer -->
+                    <div class="col-12 col-xl-7 canvas-card">
+                        <div class="card overflow-hidden shadow">
+                            <div class="card-body p-0">
+                                <div class="d-flex justify-content-between align-items-center pt-4 px-3">
+                                    <h4>Order and Viewer</h4>
+                                    <div class="">
+                                        <img src="img/user/avatar10.jpg" alt="" srcset="" class="ov-img rounded-circle">
+                                        <img src="img/user/avatar1.jpg" alt="" srcset="" class="ov-img rounded-circle">
+                                        <img src="img/user/avatar5.jpg" alt="" srcset="" class="ov-img rounded-circle">
+                                        <img src="img/user/avatar7.jpg" alt="" srcset="" class="ov-img rounded-circle">
+                                        <img src="img/user/avatar3.jpg" alt="" srcset="" class="ov-img rounded-circle">
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="wrapper">
+                                    <canvas id="ov" height="100"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- item carousel layout -->
+                    <div class="col-12 col-xl-5">
+                        <div id="itemCarousel" class="carousel slide item-carousel" data-ride="carousel">
+                        <ol class="carousel-indicators" style="bottom: -10px">
+                            <li data-target="#itemCarousel" data-slide-to="0" class="bg-primary active"></li>
+                            <li data-target="#itemCarousel" data-slide-to="1" class="bg-primary"></li>
+                            <li data-target="#itemCarousel" data-slide-to="2" class="bg-primary"></li>
+                            <li data-target="#itemCarousel" data-slide-to="3" class="bg-primary"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card">
+                                    <div class="card-body shadow">
+                                        <div class="item-card">
+                                            <div class="d-flex justify-content-between align-items-end">
+                                            <div class="">
+                                                    <p class="font-weight-bolder text-black-50">500 MMK</p>
+                                                    <h4 class="text-primary text-bold">Coffee Cup</h4>
+                                            </div>
+                                                    <img src="img/item/item1.png" alt="" srcset="" class="item-card-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-body shadow">
+                                        <div class="item-card">
+                                            <div class="d-flex justify-content-between align-items-end">
+                                            <div class="">
+                                                    <p class="font-weight-bolder text-black-50">3500 MMK</p>
+                                                    <h4 class="text-primary text-bold">Stick</h4>
+                                            </div>
+                                                    <img src="img/item/item2.png" alt="" srcset="" class="item-card-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-body shadow">
+                                        <div class="item-card">
+                                            <div class="d-flex justify-content-between align-items-end">
+                                            <div class="">
+                                                    <p class="font-weight-bolder text-black-50">5000 MMK</p>
+                                                    <h4 class="text-primary text-bold">Book</h4>
+                                            </div>
+                                                    <img src="img/item/item3.png" alt="" srcset="" class="item-card-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card">
+                                    <div class="card-body shadow">
+                                        <div class="item-card">
+                                            <div class="d-flex justify-content-between align-items-end">
+                                            <div class="">
+                                                    <p class="font-weight-bolder text-black-50">100 MMK</p>
+                                                    <h4 class="text-primary text-bold">Contact Card</h4>
+                                            </div>
+                                                    <img src="img/item/item4.png" alt="" srcset="" class="item-card-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#itemCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon text-primary" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#itemCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only bg-primary">Next</span>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <script src="vendor/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous"></script>
+    <script src="vendor/way_point/jquery.waypoints.js"></script>
+    <script src="vendor/counter_up/counter_up.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/chart_js/chart.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
