@@ -8,6 +8,11 @@
     --primary-soft: #f3f3f3;
 }
 
+#loading-container{
+    width: 200px;
+    height: 200px;
+}
+
 /* for main menu layout */
 .aside {
     width: 300px;
